@@ -1,21 +1,23 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { PoMenuItem } from '@po-ui/ng-components';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  AppName:string = 'Estudando componentes';
+
+  constructor(private router: Router) {}
 
   readonly menus: Array<PoMenuItem> = [
-    { label: 'Home', action: this.onClick.bind(this) },
-    { label: 'Criação', action: this.onClick.bind(this) },
+    { label: 'Accordion', action: () => this.router.navigate(['accordion']) },
   ];
 
   private onClick() {
-    alert('Clicked in menu item')
+    alert('Clicked in menu item');
   }
-
 }
