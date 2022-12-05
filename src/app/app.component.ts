@@ -15,6 +15,7 @@ export class AppComponent {
 
   readonly menus: Array<PoMenuItem> = [
     { label: 'Accordion', action: () => this.router.navigate(['accordion']) },
+    { label: 'Avatar', action: () => this.router.navigate(['avatar']) },
   ];
 
   private onClick() {
