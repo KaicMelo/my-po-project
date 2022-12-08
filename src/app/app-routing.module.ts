@@ -19,6 +19,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./routes/avatar/avatar.module').then((m) => m.AvatarModule),
   },
+  {
+    path: 'breadcrumb',
+    loadChildren: () =>
+      import('./routes/breadcrumb/breadcrumb.module').then((m) => m.BreadcrumbModule),
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
