@@ -17,6 +17,7 @@ export class AppComponent {
     { label: 'Accordion', action: () => this.router.navigate(['accordion']) },
     { label: 'Avatar', action: () => this.router.navigate(['avatar']) },
     { label: 'Breadcrumb', action: () => this.router.navigate(['breadcrumb']) },
+    { label: 'Button', action: () => this.router.navigate(['po-button']) },
   ];
 
 }

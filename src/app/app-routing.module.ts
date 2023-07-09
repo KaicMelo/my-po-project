@@ -24,6 +24,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./routes/breadcrumb/breadcrumb.module').then((m) => m.BreadcrumbModule),
   },
+  {
+    path: 'po-button',
+    loadChildren: () =>
+      import('./routes/button/button.module').then((m) => m.ButtonModule),
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
